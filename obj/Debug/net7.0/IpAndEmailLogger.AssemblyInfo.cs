@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IpAndEmailLogger")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01ac60b7028015ffc31af0695f9a369674a243e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ceb72cf6f2695da1454ba64d5c1b2de008f9df0")]
 [assembly: System.Reflection.AssemblyProductAttribute("IpAndEmailLogger")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IpAndEmailLogger")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

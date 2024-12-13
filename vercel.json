@@ -1,25 +1,19 @@
 {
     "version": 2,
-    "public": true,
     "builds": [
         {
-            "src": "publish/**/*",
-            "use": "@vercel/static"
+            "src": "Program.cs",
+            "use": "@vercel/dotnet-builder"
         }
     ],
     "routes": [
         {
-            "src": "/",
-            "dest": "publish/index.html"
-        },
-        {
-            "src": "/submit",
-            "methods": ["POST"],
-            "dest": "publish/api/submit"
-        },
-        {
             "src": "/(.*)",
-            "dest": "publish/$1"
+            "dest": "/api/$1"
+        },
+        {
+            "src": "/",
+            "dest": "/api/index"
         }
     ]
 } 
