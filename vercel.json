@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "public": true,
+    "builds": [
+        {
+            "src": "Program.cs",
+            "use": "@vercel/dotnet"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "Program.cs"
+        }
+    ]
+} 
