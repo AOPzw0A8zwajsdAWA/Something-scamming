@@ -3,14 +3,23 @@
     "public": true,
     "builds": [
         {
-            "src": "Program.cs",
-            "use": "@vercel/dotnet"
+            "src": "publish/**/*",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
         {
+            "src": "/",
+            "dest": "publish/index.html"
+        },
+        {
+            "src": "/submit",
+            "methods": ["POST"],
+            "dest": "publish/api/submit"
+        },
+        {
             "src": "/(.*)",
-            "dest": "Program.cs"
+            "dest": "publish/$1"
         }
     ]
 } 

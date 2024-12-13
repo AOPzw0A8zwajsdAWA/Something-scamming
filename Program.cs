@@ -7,6 +7,13 @@ using System.Text.Json;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
+// Add this at the start of your Program.cs
+if (builder.Environment.IsProduction())
+{
+    app.UseStaticFiles();
+    app.UseDefaultFiles();
+}
+
 // Add CORS and security headers
 app.Use(async (context, next) =>
 {
